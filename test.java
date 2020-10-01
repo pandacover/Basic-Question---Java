@@ -1,11 +1,23 @@
-public class test {
-    public static void main(String args[]) {
-        int lm = 4;
-        String mname = "kaur";
-        System.out.println(mname.charAt(lm / 2));
-        System.out.println(mname.charAt(lm / 2 + 1));
-        // System.out.println("" + (int) (((int) mname.charAt(lm % 2) + (int)
-        // mname.charAt(lm % 2 + 1)) / 2));
-    }
+import java.io.*;
+import java.util.*;
 
+class test {
+    public static void main(String args[]) throws IOException {
+        String str = "This is a String.";
+        FileWriter fw = new FileWriter("output.txt");
+        File obj = new File("output.txt");
+
+        for (int i = 0; i < str.length(); i++) {
+            fw.write(str.charAt(i));
+        }
+        fw.close();
+
+        Scanner scn = new Scanner(obj);
+
+        while (scn.hasNext()) {
+            String data = scn.nextLine();
+            System.out.println(data);
+        }
+        scn.close();
+    }
 }
