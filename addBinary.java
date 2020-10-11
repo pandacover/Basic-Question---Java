@@ -14,7 +14,6 @@ public class addBinary {
                 sum += a.charAt(i--) - 48;
             if (j >= 0)
                 sum += b.charAt(j--) - 48;
-
             sum += carry;
             sb.append(sum % 2);
             carry = sum / 2;
