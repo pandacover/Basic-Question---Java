@@ -13,7 +13,7 @@ public class decodeString {
             int index = i;
             while (i < len && !digits.contains("" + S.charAt(i))) {
                 i++;
-                flag = 0;
+                flag=0;
             }
             String temp = ret += S.substring(index, i);
             if (flag == 0)
