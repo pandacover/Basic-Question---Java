@@ -27,7 +27,6 @@ public class addBinary {
     public static void main(String[] args) {
         String a = sc.next(), b = sc.next();
         System.out.println(solution(a, b));
-
     }
 
 }
