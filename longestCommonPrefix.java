@@ -28,7 +28,7 @@ public class longestCommonPrefix {
         String[] str = new String[3];
         for (int i = 0; i < str.length; i++)
             str[i] = sc.nextLine();
-        System.out.println(solution(str));
+        System.out.print(solution(str));
         sc.close();
     }
 
