@@ -27,6 +27,6 @@ public class plusOne {
         for (int i = 0; i < digits.length; i++)
             digits[i] = sc.nextInt();
         for (int i = 0; i < solution(digits).length; i++)
-            System.out.print(solution(digits)[i] + " ");
+            System.out.println(solution(digits)[i] + " ");
     }
 }
