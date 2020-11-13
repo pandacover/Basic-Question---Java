@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class removeDuplicates {
+public class removeDuplicate {
     public static int[] nums;
 
     private static int solution(int[] nums) {
