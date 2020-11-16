@@ -7,9 +7,9 @@ public class aNumPalin {
        String newstr = s.replaceAll("[^a-zA-Z0-9]+", "");
        newstr = newstr.toLowerCase();
         StringBuffer sb = new StringBuffer(newstr);
-        if(newstr.equals(sb.reverse().toString()))
-            return true;
-        return false;
+        if(!newstr.equals(sb.reverse().toString()))
+            return false;
+        return true;
     }
 
     public static void main(String[] args) {
